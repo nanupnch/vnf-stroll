@@ -1,0 +1,13 @@
+# "Optimal" series of Fig. 9 in Tran, Sun, Tang and Pan, IPDPS 2022 (unweighted k = 8 fat-tree),
+# in units of 1e6, read from the vector graphics of the published PDF (reading precision about 0.01).
+# Panel a: n = 7 VNFs, varying the number of VM pairs l. Panel b: l = 1000, varying n.
+panel,l,n,optimal_1e6
+a,500,7,2.554
+a,1000,7,5.142
+a,1500,7,7.700
+a,2000,7,10.303
+b,1000,3,3.426
+b,1000,5,4.279
+b,1000,7,5.131
+b,1000,9,5.984
+b,1000,11,6.866

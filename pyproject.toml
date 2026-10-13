@@ -1,0 +1,10 @@
+[project]
+name = "vnfstroll"
+version = "0.1.0"
+description = "Exact baselines for VNF placement and migration in fat-tree data centers"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "matplotlib"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
