@@ -43,18 +43,18 @@ give. Ratios do not depend on that scale, so they are the quantities compared.
 | n | optimum / Λ (min–max) | max |exact − closed form| | ingress → egress (count) | decomposition ms | MILP s (mean / max) |
 |---|---|---|---|---|---|
 | 1 | 6.0000–6.0000 | 0.0e+00 | core → core (20) | 0.0 | 0.00 / 0.00 |
-| 2 | 7.6712–7.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 0.12 / 0.13 |
-| 3 | 8.0000–8.0000 | 0.0e+00 | core → core (20) | 0.1 | 0.38 / 0.41 |
+| 2 | 7.6712–7.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 0.12 / 0.12 |
+| 3 | 8.0000–8.0000 | 0.0e+00 | core → core (20) | 0.1 | 0.38 / 0.42 |
 | 4 | 9.6712–9.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 0.42 / 0.54 |
-| 5 | 10.0000–10.0000 | 0.0e+00 | core → core (20) | 0.1 | 1.31 / 1.79 |
+| 5 | 10.0000–10.0000 | 0.0e+00 | core → core (20) | 0.1 | 1.31 / 1.78 |
 | 6 | 11.6712–11.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 0.98 / 1.67 |
 | 7 | 12.0000–12.0000 | 0.0e+00 | core → core (20) | 0.1 | 0.65 / 0.67 |
-| 8 | 13.6712–13.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 1.11 / 2.59 |
-| 9 | 14.0000–14.0000 | 0.0e+00 | core → core (20) | 1.0 | 1.78 / 2.53 |
-| 10 | 15.6712–15.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.6 | 1.62 / 2.91 |
-| 11 | 16.0000–16.0000 | 0.0e+00 | core → core (20) | 0.4 | 1.87 / 3.14 |
-| 12 | 17.6712–17.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.3 | 2.03 / 3.34 |
-| 13 | 18.0000–18.0000 | 0.0e+00 | core → core (20) | 0.2 | 2.14 / 3.47 |
+| 8 | 13.6712–13.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.1 | 1.11 / 2.60 |
+| 9 | 14.0000–14.0000 | 0.0e+00 | core → core (20) | 1.0 | 1.77 / 2.53 |
+| 10 | 15.6712–15.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.5 | 1.62 / 2.90 |
+| 11 | 16.0000–16.0000 | 0.0e+00 | core → core (20) | 0.3 | 1.87 / 3.16 |
+| 12 | 17.6712–17.7314 | 0.0e+00 | agg → core (10), core → agg (10) | 0.2 | 2.03 / 3.34 |
+| 13 | 18.0000–18.0000 | 0.0e+00 | core → core (20) | 0.1 | 2.14 / 3.45 |
 
 ## Inner strolls H_m(u, v) used by the decomposition
 
@@ -85,8 +85,8 @@ Fewest hops from switch u to switch v through m distinct other switches, per cla
 ## Run
 
 - command: `python -m experiments.r2_top_fig9`
-- date (UTC): 2026-10-13 03:40
-- code version: no commit yet
+- date (UTC): 2026-10-13 16:22
+- code version: 3ca4afa
 - python / numpy / scipy: 3.14.6 / 2.5.4 / 1.18.1
 - machine: Darwin arm64, Apple M1
 - workloads: 20 per setting (seeds 0..19), shared across n

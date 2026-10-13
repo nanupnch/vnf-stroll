@@ -67,20 +67,20 @@ All pairs of the same type have the same optimum (k = 4, 6, 8): yes.
 | k | host pairs | searches | mean ms per search | max ms |
 |---|---|---|---|---|
 | 4 | 240 | 3,120 | 0.01 | 1.1 |
-| 6 | 2,862 | 37,206 | 0.02 | 8.0 |
-| 8 | 16,256 | 211,328 | 0.03 | 2.0 |
+| 6 | 2,862 | 37,206 | 0.02 | 7.2 |
+| 8 | 16,256 | 211,328 | 0.03 | 0.5 |
 | 10 | 3 | 39 | 0.10 | 0.4 |
 | 12 | 3 | 39 | 0.20 | 0.7 |
 | 14 | 3 | 39 | 0.39 | 1.3 |
 | 16 | 3 | 39 | 0.68 | 2.1 |
 
-MILP cross-check: 78 representative cases, all proven optimal and equal to the search; slowest 12.28 s (k=8, same-rack, n=13).
+MILP cross-check: 78 representative cases, all proven optimal and equal to the search; slowest 12.22 s (k=8, same-rack, n=13).
 
 ## Run
 
 - command: `python -m experiments.r1_top1`
-- date (UTC): 2026-10-13 03:34
-- code version: no commit yet
+- date (UTC): 2026-10-13 16:16
+- code version: 3ca4afa
 - python / numpy / scipy: 3.14.6 / 2.5.4 / 1.18.1
 - machine: Darwin arm64, Apple M1
-- wall time: 79 s
+- wall time: 78 s
